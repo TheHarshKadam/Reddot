@@ -23,15 +23,27 @@
             button{
                 background-color: black;
                 color: black;
-            }      
+            }
+            select{
+                color: white;
+            }
+            .wrapper {
+                font-size: 0;
+            }
+            .centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
         </style>
     </head>
     <body>
         <body>
-            <nav class="navbar navbar-fixed-top">
-                <div class="container">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <nav class="navbar navbar-default navbar-static-top" style="background-color: white; border-bottom: none;">
+                <div class="container" style="border-bottom: none;">
+                    <div class="navbar-header" style="border-bottom: none;">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false">
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
@@ -40,7 +52,7 @@
                             <img src="Assets/reddot.jpeg">
                         </a>
                     </div>
-                    <div class="collapase navbar-collapse" id="myNavbar">
+                    <div class="collapase navbar-collapse" id="myNavbar" style="border-bottom: none;">
                         <ul class="nav navbar-nav navbar-right" >
                             <li>
                                 <a href="#" style="font-family: 'Josefin Sans', sans-serif; color: black;">
@@ -100,26 +112,49 @@
                         <div class="panel-body">
                             <form>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" name="email" placeholder="Your name" id="textbox">
+                                    <input type="text" class="form-control" name="name" placeholder="Your name" id="textbox">
                                 </div><br><br>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" name="password" placeholder="Your email address" id="textbox">
+                                    <input type="text" class="form-control" name="email" placeholder="Your email address" id="textbox">
                                 </div><br><br>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" name="password" placeholder="Your email address" id="textbox">
+                                    <input type="text" class="form-control" name="phone number" placeholder="Your Phone Number" id="textbox">
                                 </div><br><br>
                                 <div class="form-group">
-                                    <select class="form-control" aria-placeholder="Type of Inquiry" id="textbox">
+                                    <select class="form-control" placeholder="Type of Inquiry" id="textbox">
                                         <option>Type of Inquiry</option>
                                         <option>Inquiry 1</option>
                                         <option>Inquiry 2</option>
                                         <option>Inquiry 3</option>
                                     </select>
-                                </div>
+                                </div><br><br>
+                                <div class="form-group">
+                                    <textarea class="form-control" rows="6" placeholder="How can we help you" id="textbox"></textarea>
+                                  </div>
                             </form>
                         </div>
                     </div>
+                </div><br><br>
+                <center><button class="btn btn-default btn-lg" style="padding-top: 30px; padding-left: 80px;padding-right: 80px;padding-bottom: 30px;"> Send Message</button></center>
+            </div><br><br><br><br>
+            <div class="container">
+                <div class="row wrapper">
+                    <img class="col" style="display: inline-block;
+                    width: 25%; -webkit-filter: brightness(20%);
+                    filter:brightness(20%);" src="Assets/imgs1.jpg" alt="?">
+
+                    <img class="col" style="display: inline-block;
+                    width: 25%; -webkit-filter: brightness(20%);
+                    filter:brightness(20%);" src="Assets/imgs2.jpg" alt="?">
+
+                    <img class="col" style="display: inline-block;
+                    width: 25%; -webkit-filter: brightness(20%);
+                    filter:brightness(20%);" src="Assets/imgs3.jpg" alt="?">
+
+                    <img class="col" style="display: inline-block;
+                    width: 25%; -webkit-filter: brightness(20%);
+                    filter:brightness(20%);" src="Assets/imgs4.jpg" alt="?">
                 </div>
-            </div>
+            </div><br>
     </body>
 </html>
